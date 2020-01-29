@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{xcolor}
+ 
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+
+\newcommand{\braces}[1]{\left(#1\right)}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Span}[1]{\text{Span}\left\{#1\right\}}
+
+\newcommand{\vVectorXYZ}[3]{\begin{bmatrix}#1 \\ #2 \\#3\end{bmatrix}}
+
+ 
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{convention}{Convention}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{example}{Example}
+\newtheorem*{consider}{Consider}
+
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+
+\parskip 0.1in
+ 
+\begin{document}
+\section*{IMDb Movie Stereotyper}
+Jacob Junqi Tian
+
+\subsection*{Objective}
+Predict the rating of a movie given information such as, 
+\begin{itemize}
+    \item Genre of the movie,
+    \item Year of the movie, and
+    \item A list of actors in the movie.
+\end{itemize}
+
+If time permits, the model could also judge the movie based on 
+\begin{itemize}
+    \item Its title,
+    \item A (human-readable) summary of the plot, and
+    \item The cover art of the movie (yes, we would judge the movie by its cover).
+
+\end{itemize}
+
+\subsection*{Technologies}
+To approximate the rating of the movie based on its genre, year, and list of actor, regression would suffice. Given the overwhelming size of the dataset, \textbf{gradient descent} might be the best choice.
+
+To approximate the rating based on its title or summary, it would take \textbf{natural language processing} techniques.
+
+\textbf{Convolutional neural networks} might help judge the movie by its cover.
+\end{document}
