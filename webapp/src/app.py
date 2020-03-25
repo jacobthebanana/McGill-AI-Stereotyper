@@ -6,6 +6,7 @@ from joblib import load
 import numpy as np
 
 app = Flask(__name__)
+model = load('model.joblib')
 
 @app.route('/')
 def predict():
@@ -50,9 +51,7 @@ def predict():
         return {"message": 
                 "This API requires the following feature(s) but could not find them in your GET request.", 
                 "missing_fields": missing_fields}, 400
-   
-    model = load('model.joblib')
-    
+       
     raw_prediction = model.predict(X_df)
     prediction = np.argmax(raw_prediction)
 
