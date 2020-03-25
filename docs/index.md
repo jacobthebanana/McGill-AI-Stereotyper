@@ -1,22 +1,22 @@
+Ever thought about making a movie? What would be people's response? Would the average rating of your movie beat the averge? Fill out the following details to get an estimate! Read the [technical specs](/technical).
+
 <html>
     <body>
         <form action="https://machine-learning.api.tianshome.com/movie-predictor-api" target="_blank" name="form" id="form1" method="get">
-            <label for="startYear">Start Year (enter a number)</label><br>
+            <label for="startYear">Start Year (enter a number) (*)</label><br>
             <input type="text" id="startYear" name="startYear"><br>
-            <label for="runtimeMinutes">Number of Minutes (enter a number)</label><br>
+            <label for="runtimeMinutes">Number of Minutes (enter a number) (*)</label><br>
             <input type="text" id="runtimeMinutes" name="runtimeMinutes"><br>
             <br>
-            <label for="tconst">directorAverage (enter a number)</label><br>
+            <label for="tconst">Average rating for directors (enter a number) (*)</label><br>
             <input type="text" id="directorAverage" name="directorAverage"><br>
-            <label for="writerAverage">writerAverage (enter a number)</label><br>
+            <label for="writerAverage">Average rating for writers (enter a number) (*)</label><br>
             <input type="text" id="writerAverage" name="writerAverage"><br>
-            <label for="principalAverage">principalAverage (enter a number)</label><br>
+            <label for="principalAverage">Average rating for actors (enter a number) (*)</label><br>
             <input type="text" id="principalAverage" name="principalAverage"><br>
             <br>
             <input type="checkbox" id="isAction" name="isAction">
             <label for="isAction">Action</label>
-            <input type="checkbox" id="isAdult" name="isAdult">
-            <label for="isAdult">Adult</label>
             <input type="checkbox" id="isAdventure" name="isAdventure">
             <label for="isAdventure">Adventure</label><br>
             <input type="checkbox" id="isAnimation" name="isAnimation">
