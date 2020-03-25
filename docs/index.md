@@ -14,61 +14,61 @@
             <input type="text" id="principalAverage" name="principalAverage"><br>
             <br>
             <input type="checkbox" id="isAction" name="isAction">
-            <label for="isAction">isAction</label><br>
+            <label for="isAction">Action</label>
             <input type="checkbox" id="isAdult" name="isAdult">
-            <label for="isAdult">isAdult</label><br>
+            <label for="isAdult">Adult</label>
             <input type="checkbox" id="isAdventure" name="isAdventure">
-            <label for="isAdventure">isAdventure</label><br>
+            <label for="isAdventure">Adventure</label><br>
             <input type="checkbox" id="isAnimation" name="isAnimation">
-            <label for="isAnimation">isAnimation</label><br>
+            <label for="isAnimation">Animation</label>
             <input type="checkbox" id="isBiography" name="isBiography">
-            <label for="isBiography">isBiography</label><br>
+            <label for="isBiography">Biography</label>
             <input type="checkbox" id="isComedy" name="isComedy">
-            <label for="isComedy">isComedy</label><br>
+            <label for="isComedy">Comedy</label><br>
             <input type="checkbox" id="isCrime" name="isCrime">
-            <label for="isCrime">isCrime</label><br>
+            <label for="isCrime">Crime</label>
             <input type="checkbox" id="isDocumentary" name="isDocumentary">
-            <label for="isDocumentary">isDocumentary</label><br>
+            <label for="isDocumentary">Documentary</label>
             <input type="checkbox" id="isDrama" name="isDrama">
-            <label for="isDrama">isDrama</label><br>
+            <label for="isDrama">Drama</label><br>
             <input type="checkbox" id="isFamily" name="isFamily">
-            <label for="isFamily">isFamily</label><br>
+            <label for="isFamily">Family</label>
             <input type="checkbox" id="isFantasy" name="isFantasy">
-            <label for="isFantasy">isFantasy</label><br>
+            <label for="isFantasy">Fantasy</label>
             <input type="checkbox" id="isFilm-Noir" name="isFilm-Noir">
-            <label for="isFilm-Noir">isFilm-Noir</label><br>
+            <label for="isFilm-Noir">Film-Noir</label><br>
             <input type="checkbox" id="isGame-Show" name="isGame-Show">
-            <label for="isGame-Show">isGame-Show</label><br>
+            <label for="isGame-Show">Game-Show</label>
             <input type="checkbox" id="isHistory" name="isHistory">
-            <label for="isHistory">isHistory</label><br>
+            <label for="isHistory">History</label>
             <input type="checkbox" id="isHorror" name="isHorror">
-            <label for="isHorror">isHorror</label><br>
+            <label for="isHorror">Horror</label><br>
             <input type="checkbox" id="isMusic" name="isMusic">
-            <label for="isMusic">isMusic</label><br>
+            <label for="isMusic">Music</label>
             <input type="checkbox" id="isMusical" name="isMusical">
-            <label for="isMusical">isMusical</label><br>
+            <label for="isMusical">Musical</label>
             <input type="checkbox" id="isMystery" name="isMystery">
-            <label for="isMystery">isMystery</label><br>
+            <label for="isMystery">Mystery</label><br>
             <input type="checkbox" id="isNews" name="isNews">
-            <label for="isNews">isNews</label><br>
+            <label for="isNews">News</label>
             <input type="checkbox" id="isReality-TV" name="isReality-TV">
-            <label for="isReality-TV">isReality-TV</label><br>
+            <label for="isReality-TV">Reality-TV</label>
             <input type="checkbox" id="isRomance" name="isRomance">
-            <label for="isRomance">isRomance</label><br>
+            <label for="isRomance">Romance</label><br>
             <input type="checkbox" id="isSci-Fi" name="isSci-Fi">
-            <label for="isSci-Fi">isSci-Fi</label><br>
+            <label for="isSci-Fi">Sci-Fi</label>
             <input type="checkbox" id="isShort" name="isShort">
-            <label for="isShort">isShort</label><br>
+            <label for="isShort">Short</label>
             <input type="checkbox" id="isSport" name="isSport">
-            <label for="isSport">isSport</label><br>
+            <label for="isSport">Sport</label><br>
             <input type="checkbox" id="isTalk-Show" name="isTalk-Show">
-            <label for="isTalk-Show">isTalk-Show</label><br>
+            <label for="isTalk-Show">Talk-Show</label>
             <input type="checkbox" id="isThriller" name="isThriller">
-            <label for="isThriller">isThriller</label><br>
+            <label for="isThriller">Thriller</label>
             <input type="checkbox" id="isWar" name="isWar">
-            <label for="isWar">isWar</label><br>
+            <label for="isWar">War</label><br>
             <input type="checkbox" id="isWestern" name="isWestern">
-            <label for="isWestern">isWestern</label><br>
+            <label for="isWestern">Western</label>
             <br>
             <input type="submit" value="Submit">
         </form>
