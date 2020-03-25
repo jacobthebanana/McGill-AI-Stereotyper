@@ -1,4 +1,4 @@
-Ever thought about making a movie? What would be people's response? Would the average rating of your movie beat the averge? Fill out the following details to get an estimate! Read the [technical specs](/technical).
+Ever thought about making a movie? What would be people's response? Would the average rating of your movie beat the averge? Fill out the following details to get an estimate! Read the [technical specs](technical).
 
 <html>
     <body>
