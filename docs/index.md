@@ -1,6 +1,6 @@
 <html>
     <body>
-        <form action="https://machine-learning.api.tianshome.com/movie-predictor-api/" target="_blank" name="form" id="form1" method="get">
+        <form action="https://machine-learning.api.tianshome.com/movie-predictor-api" target="_blank" name="form" id="form1" method="get">
             <label for="startYear">Start Year (enter a number)</label><br>
             <input type="text" id="startYear" name="startYear"><br>
             <label for="runtimeMinutes">Number of Minutes (enter a number)</label><br>
