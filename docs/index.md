@@ -15,16 +15,16 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
     <body>
         <form action="https://machine-learning.api.tianshome.com/movie-predictor-api" target="_blank" name="form" id="form1" method="get">
             <label for="startYear">Start Year (enter a number) (*)</label><br>
-            <input type="text" id="startYear" name="startYear"><br>
+            <input type="text" id="startYear" name="startYear" value="2010"><br>
             <label for="runtimeMinutes">Number of Minutes (enter a number) (*)</label><br>
-            <input type="text" id="runtimeMinutes" name="runtimeMinutes"><br>
+            <input type="text" id="runtimeMinutes" name="runtimeMinutes" value="100"><br>
             <br>
-            <label for="tconst">Average rating for directors (enter a number) (*)</label><br>
-            <input type="text" id="directorAverage" name="directorAverage"><br>
-            <label for="writerAverage">Average rating for writers (enter a number) (*)</label><br>
-            <input type="text" id="writerAverage" name="writerAverage"><br>
-            <label for="principalAverage">Average rating for actors (enter a number) (*)</label><br>
-            <input type="text" id="principalAverage" name="principalAverage"><br>
+            <label for="tconst">Average rating for directors (on a scale of 10) (*)</label><br>
+            <input type="text" id="directorAverage" name="directorAverage" value="7"><br>
+            <label for="writerAverage">Average rating for writers (on a scale of 10) (*)</label><br>
+            <input type="text" id="writerAverage" name="writerAverage" value="7"><br>
+            <label for="principalAverage">Average rating for actors (on a scale of 10) (*)</label><br>
+            <input type="text" id="principalAverage" name="principalAverage" value="7"><br>
             <br>
             <input type="checkbox" id="isAction" name="isAction">
             <label for="isAction">Action</label>
