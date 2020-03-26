@@ -47,3 +47,7 @@ An Apache2 (Ubuntu) web server acts as the SSL reverse proxy gateway for the bac
 ### Containerization
 The backend is turned into a Docker [image](https://hub.docker.com/r/jacobthebanana/movie-rfc-backend), such that deployment would be a breeze.
 This image is currently deployed on a (virtualized) [McGill Science Computer Taskforce](https://ctf.science.mcgill.ca/) Docker host in the McConnell Engineering Building of McGill University, Montreal, Quebec, Canada.
+
+![CTF-Web-Hosting](https://ctf.science.mcgill.ca/assets/images/icons-v2/webHosting.png)
+
+(The Web Hosting clipart above is created by the [McGill Science Computer Taskforce](https://ctf.science.mcgill.ca/) and shared under CC-BY-SA 4.0.)
