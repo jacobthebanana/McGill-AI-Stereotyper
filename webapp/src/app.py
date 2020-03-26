@@ -54,9 +54,6 @@ def predict():
                 "This API requires the following feature(s) but could not find them in your GET request.", 
                 "missing_fields": missing_fields}, 400
        
-    raw_prediction = model.predict(X_df)
-    prediction = np.argmax(raw_prediction)
-
     return eli5.format_as_html(eli5.explain_prediction(model, X_df.iloc[0])), 200
 
 if __name__ == '__main__':
