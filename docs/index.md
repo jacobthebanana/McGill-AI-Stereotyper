@@ -35,15 +35,15 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
             <label for="isAnimation">Animation</label>
             <input type="checkbox" id="isBiography" name="isBiography">
             <label for="isBiography">Biography</label>
-            <input type="checkbox" id="isComedy" name="isComedy" checked>
+            <input type="checkbox" id="isComedy" name="isComedy">
             <label for="isComedy">Comedy</label><br>
             <input type="checkbox" id="isCrime" name="isCrime">
             <label for="isCrime">Crime</label>
             <input type="checkbox" id="isDocumentary" name="isDocumentary">
             <label for="isDocumentary">Documentary</label>
-            <input type="checkbox" id="isDrama" name="isDrama">
+            <input type="checkbox" id="isDrama" name="isDrama" checked>
             <label for="isDrama">Drama</label><br>
-            <input type="checkbox" id="isFamily" name="isFamily" checked>
+            <input type="checkbox" id="isFamily" name="isFamily">
             <label for="isFamily">Family</label>
             <input type="checkbox" id="isFantasy" name="isFantasy">
             <label for="isFantasy">Fantasy</label>
@@ -65,9 +65,9 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
             <label for="isNews">News</label>
             <input type="checkbox" id="isReality-TV" name="isReality-TV">
             <label for="isReality-TV">Reality-TV</label>
-            <input type="checkbox" id="isRomance" name="isRomance">
+            <input type="checkbox" id="isRomance" name="isRomance" checked>
             <label for="isRomance">Romance</label><br>
-            <input type="checkbox" id="isSci-Fi" name="isSci-Fi">
+            <input type="checkbox" id="isSci-Fi" name="isSci-Fi" checked>
             <label for="isSci-Fi">Sci-Fi</label>
             <input type="checkbox" id="isShort" name="isShort">
             <label for="isShort">Short</label>
