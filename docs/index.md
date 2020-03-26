@@ -7,8 +7,8 @@ Also: take a look the [technical specs](technical).
 ## Predict-a-title
 Enter the details and hit submit! (Fields marked with an asterisk (\*) are *required*.) 
 
-- `y = 1` means that we expect your title to get an above-average rating. Congratulations! 😆
-- `y = 0` means that your title might get a below-average rating. Don't panic. Take a closer look at the "top features" shown below the score. Considering tweaking features (other than `<BIAS>`) with the highest "contribution" for a better performance. 😉
+- **y = 1** means that we expect your title to get an above-average rating. Congratulations! 😆
+- **y = 0** means that your title might get a below-average rating. Don't panic. Take a closer look at the "top features" shown below the score. Considering tweaking features with the highest "contribution" for a better performance. 😉
 - In the unlikely event of a 503 Service Unavailable message, please (kindly) email `Jacob at Banana dot Abay dot Cf`. Not interested in waiting? Thanks to Docker, it takes as few as one line of command to spin up this API backend on your own machine! Get started by visiting the [project page](https://hub.docker.com/r/jacobthebanana/movie-rfc-backend) on Docker Hub. 🐳
 
 <html>
