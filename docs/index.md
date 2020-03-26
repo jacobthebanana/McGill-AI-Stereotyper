@@ -19,12 +19,13 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
             <label for="runtimeMinutes">Number of Minutes (enter a number) (*)</label><br>
             <input type="text" id="runtimeMinutes" name="runtimeMinutes" value="100"><br>
             <br>
+            <p>Keep in mind that the average rating you are aiming for is <strong>7</strong>.</p>
             <label for="tconst">Average rating for directors (on a scale of 10) (*)</label><br>
-            <input type="text" id="directorAverage" name="directorAverage" value="7"><br>
+            <input type="text" id="directorAverage" name="directorAverage" value="9"><br>
             <label for="writerAverage">Average rating for writers (on a scale of 10) (*)</label><br>
-            <input type="text" id="writerAverage" name="writerAverage" value="7"><br>
+            <input type="text" id="writerAverage" name="writerAverage" value="9"><br>
             <label for="principalAverage">Average rating for actors (on a scale of 10) (*)</label><br>
-            <input type="text" id="principalAverage" name="principalAverage" value="7"><br>
+            <input type="text" id="principalAverage" name="principalAverage" value="5"><br>
             <br>
             <input type="checkbox" id="isAction" name="isAction">
             <label for="isAction">Action</label>
@@ -34,7 +35,7 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
             <label for="isAnimation">Animation</label>
             <input type="checkbox" id="isBiography" name="isBiography">
             <label for="isBiography">Biography</label>
-            <input type="checkbox" id="isComedy" name="isComedy">
+            <input type="checkbox" id="isComedy" name="isComedy" checked>
             <label for="isComedy">Comedy</label><br>
             <input type="checkbox" id="isCrime" name="isCrime">
             <label for="isCrime">Crime</label>
@@ -42,7 +43,7 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
             <label for="isDocumentary">Documentary</label>
             <input type="checkbox" id="isDrama" name="isDrama">
             <label for="isDrama">Drama</label><br>
-            <input type="checkbox" id="isFamily" name="isFamily">
+            <input type="checkbox" id="isFamily" name="isFamily" checked>
             <label for="isFamily">Family</label>
             <input type="checkbox" id="isFantasy" name="isFantasy">
             <label for="isFantasy">Fantasy</label>
