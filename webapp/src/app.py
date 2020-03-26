@@ -5,15 +5,17 @@ import pandas as pd
 from joblib import load
 import numpy as np
 
+import eli5
+
 app = Flask(__name__)
-model = load('model.joblib')
+model = load('model-version-2.joblib')
 
 @app.route('/')
 def predict():
     # Request.args is itself a dictionary of key -> scalar_value. 
     # However, it needs to be reshaped into key -> [scalar_value] 
     # before being converted to a Pandas dataframe.
-    X = dict()
+    X = dict()  
     defaults = {"startYear": -1, "runtimeMinutes": -1, "directorAverage": -1, 
                 "writerAverage": -1, "principalAverage": -1, "isAction": 0, 
                 "isAdult": 0, "isAdventure": 0, "isAnimation": 0, "isBiography": 0, "isComedy": 0, 
@@ -55,14 +57,7 @@ def predict():
     raw_prediction = model.predict(X_df)
     prediction = np.argmax(raw_prediction)
 
-    if prediction == 1:
-        message_text = "Above average."        
-    elif prediction == 0:
-        message_text = "Below average."
-    else:
-        return {"message": 
-                "Got unexpected response from model.predict." 
-                + "You might need to update the message logic to reflect outcomes of your model.", 
-                "rawOutcome": raw_prediction}, 500
+    return eli5.format_as_html(eli5.explain_prediction(model, X_df.iloc[0])), 200
 
-    return {"message": message_text}, 200
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='8000')
