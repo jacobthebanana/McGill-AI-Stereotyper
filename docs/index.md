@@ -15,9 +15,9 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
     <body>
         <form action="https://machine-learning.api.tianshome.com/movie-predictor-api" target="_blank" name="form" id="form1" method="get">
             <label for="startYear">Start Year (enter a number) (*)</label><br>
-            <input type="text" id="startYear" name="startYear" value="2010"><br>
+            <input type="text" id="startYear" name="startYear" value="2014"><br>
             <label for="runtimeMinutes">Number of Minutes (enter a number) (*)</label><br>
-            <input type="text" id="runtimeMinutes" name="runtimeMinutes" value="100"><br>
+            <input type="text" id="runtimeMinutes" name="runtimeMinutes" value="107"><br>
             <br>
             <p>Keep in mind that the average rating you are aiming for is <strong>7</strong>.</p>
             <label for="tconst">Average rating for directors (on a scale of 10) (*)</label><br>
