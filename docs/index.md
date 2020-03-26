@@ -1,4 +1,4 @@
-Ever thought about making a movie? What would be people's response? Would the average rating of your movie beat the averge? Fill out the following details to get an estimate! 
+Ever thought about making a movie or a TV series? What would be people's response? Would the average rating of your movie beat the averge? Fill out the following details to obtain an estimate based on the analysis of over **300,000** titles! (Fields marked with an asterisk (\*) are *required*.
 
 Also: take a look the [technical specs](technical).
 
