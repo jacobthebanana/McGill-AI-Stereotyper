@@ -23,8 +23,7 @@ Interested? This model can be access without writing any code on your side. Simp
 3. Start the Webapp. Try running `python3 app.py` in a shell or command line.
 
 ### Building the Docker container
-1. Clone this repo.
-2. Move [`Dockerfile`](https://raw.githubusercontent.com/jacobthebanana/McGill-AI-Stereotyper/master/Dockerfile), [`webapp/src/app.py`](https://raw.githubusercontent.com/jacobthebanana/McGill-AI-Stereotyper/master/webapp/src/app.py), and [`webapp/src/requirements.txt`](https://raw.githubusercontent.com/jacobthebanana/McGill-AI-Stereotyper/master/webapp/src/requirements.txt) to the same directory.
+1. Clone this repo. Move [`Dockerfile`](https://raw.githubusercontent.com/jacobthebanana/McGill-AI-Stereotyper/master/Dockerfile), [`webapp/src/app.py`](https://raw.githubusercontent.com/jacobthebanana/McGill-AI-Stereotyper/master/webapp/src/app.py), and [`webapp/src/requirements.txt`](https://raw.githubusercontent.com/jacobthebanana/McGill-AI-Stereotyper/master/webapp/src/requirements.txt) to the same directory.
 2. Modify `Dockerfile`. Instead of downloading the model from Github releases, simply `COPY` the pickled model that you and name it as `model-version-2.joblib` under `/app` in the container.
 3. Ask Docker to `build` this image and profit.
 
