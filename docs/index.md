@@ -1,8 +1,15 @@
 Ever thought about making a movie or a TV series? What would be people's response? Would the average rating of your movie beat the averge? 
 
-Fill out the following details and we will provide an estimate based on the analysis of over **300,000** titles! (Fields marked with an asterisk (\*) are *required*.)
+Fill out the following details and we will provide an estimate based on the analysis of over **300,000** titles! 
 
 Also: take a look the [technical specs](technical).
+
+## Predict-a-title
+Enter the details and hit submit! (Fields marked with an asterisk (\*) are *required*.) 
+
+- `y = 1` means that we expect your title to get an above-average rating. Congratulations! 😆
+- `y = 0` means that your title might get a below-average rating. Don't panic. Take a closer look at the "top features" shown below the score. Considering tweaking features (other than `<BIAS>`) with the highest "contribution" for a better performance. 😉
+- In the unlikely event of a 503 Service Unavailable message, please (kindly) email Jacob $\verb!jacob! \verb!@! \verb!banana.abay.cf!$. Not interested in waiting? Thanks to Docker, it takes as few as one line of command to spin up this API backend on your own machine! Get started by visiting the [project page](https://hub.docker.com/r/jacobthebanana/movie-rfc-backend) on Docker Hub. 🐳
 
 <html>
     <body>
@@ -74,7 +81,7 @@ Also: take a look the [technical specs](technical).
             <input type="checkbox" id="isWestern" name="isWestern">
             <label for="isWestern">Western</label>
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit ✅">
         </form>
     </body>
 </html>
