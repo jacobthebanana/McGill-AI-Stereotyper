@@ -36,7 +36,7 @@ That markdown document is then styled and published using Github Pages.
 
 ### Backend
 A Flask App listens for GET requests to the API address. Once a request arrives, the Flask app would scan through its argumentsx and fill in any missing blanks with default values. The Webapp would beep (with a 400 status code) if any required value is missing.
-The user input would be converted to a Pandas dataframe and fed into the autoclassifier. The explanation is part of an SEP®️ (Someone-Else's Problem) and is handled with the ELI5 library. Displaying the explanation in HTML, yet another SEP®️, is handled by [directly returning](https://github.com/jacobthebanana/McGill-AI-Stereotyper/blob/1a00082e58b500728ab1ee6a839dffe684b6bf4d/webapp/src/app.py#L57) the `eli5.explanation` object to Flask.
+The user input would be converted to a Pandas dataframe and fed into the autoclassifier. The explanation is part of an SEP®️ (Someone-Else's Problem) and is handled with the ELI5 library. Displaying the explanation in HTML, yet another SEP®️, is handled by [returning](https://github.com/jacobthebanana/McGill-AI-Stereotyper/blob/1a00082e58b500728ab1ee6a839dffe684b6bf4d/webapp/src/app.py#L57) asking ELI5 to render the `eli5.explanation` object to HTML, and returning the HTML to Flask.
 
 Note that the model (in Joblib format) is loaded into RAM immediately after backend server starts.
 
