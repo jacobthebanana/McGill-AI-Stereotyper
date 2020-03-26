@@ -5,7 +5,7 @@ This Webapp predicts the performance of your movie/TV-show based on its analysis
 These resource-intensive computations were performed in Google Colab.
 
 ### Pre-processing
-(Check out the [notebook](https://github.com/jacobthebanana/McGill-AI-Stereotyper/blob/master/src/2020-MAIS-Project-%20Data%20Preprocessing.ipynb).)
+(Check out the [notebook](https://github.com/jacobthebanana/McGill-AI-Stereotyper/blob/master/notebooks/2020-MAIS-Project-%20Data%20Preprocessing.ipynb).)
 
 The input comes in multiple datasets. The first step to do is to load and merge them into a single dataframe.
 
@@ -17,7 +17,7 @@ The notebook would then condense the actor, writer, and director data by taking 
 The dataframe is then pickled and stored as [`titles-with-ratings.pkl`](https://github.com/jacobthebanana/McGill-AI-Stereotyper/releases/download/1.0/titles-with-ratings.pkl).
 
 ### Fitting
-(Check out the [notebook](https://github.com/jacobthebanana/McGill-AI-Stereotyper/blob/master/notebooks/2020-MAIS-Project-%20Model.ipynb).
+(Check out the [notebook](https://github.com/jacobthebanana/McGill-AI-Stereotyper/blob/master/notebooks/2020-MAIS-Project-%20Model.ipynb).)
 
 The pickled dataset is loaded and further processed. The genre information is converted to a multi-label binary representation. 
 The rating is split into two categories: below average and above average.
