@@ -23,24 +23,22 @@ The pickled dataset is loaded and further processed. The genre information is co
 The rating is split into two categories: below average and above average.
 
 A 10-estimator random forest auto-classifer (from Scikit-Learn) is fitted onto the training dataset (more than 300,000 entries.) 
-With only 10 estimators, the model achieved a test accuracy of around 75% while using around 500 MB or RAM. 
-Adding 20 more estimators would improve the test accuracy by another 5% percent. 
-However, doing so was deemed not worthwhile, 
-for that would more than double the RAM requirement and make the model more costly to deploy to the cloud. 
+With only 10 estimators, the model achieved a test accuracy of around 75% with around 500 MB of RAM. 
+Adding 20 more estimators would improve the test accuracy by merely 5% percents. That was deemed not worthwhile, 
+for adding 20 estimators would more than double the RAM requirement and make the model more costly to deploy to the cloud. 
 
 The model is then dumped to a joblib file.
 
 ## The Webapp
 ### Frontend
 The frontend of this Webapp is simply an HTML form embedded in a markdown document. 
-That markdown document is then published using Github Pages.
+That markdown document is then styled and published using Github Pages.
 
 ### Backend
-A Flask App listens for GET requests to the API address. Once a request arrives, the Flask app would scan through its arguments. 
-The Webapp would fill in any missing blanks with default values, and beep (with a 400 status code) if some required value is missing.
-The user input would be converted to a Pandas dataframe and fed into the autoclassifier. The output is parsed with Numpy.
+A Flask App listens for GET requests to the API address. Once a request arrives, the Flask app would scan through its argumentsx and fill in any missing blanks with default values. The Webapp would beep (with a 400 status code) if any required value is missing.
+The user input would be converted to a Pandas dataframe and fed into the autoclassifier. The prediction is parsed with Numpy.
 
-Note that the model (in Joblib format) is loaded into RAM at the start of the backend server.
+Note that the model (in Joblib format) is loaded into RAM immediately after backend server starts.
 
 ## Other practical stuff
 ### Reverse Proxy & SSL Gateway
