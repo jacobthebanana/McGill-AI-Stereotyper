@@ -67,6 +67,7 @@ def predict():
     # It turns out that `eli5.format_as_html` simply returns a string. 
     # In that case, we shall just concatnate our explanation onto it as a paragraph (hence the `<p> ... </p>` HTML tag.)
     return \
+        "<head><meta charset=\"utf-8\"><title>Predict-a-Title 🌳 with Random-Forest Classifier</title></head>" + \
         "<p>{}</p>".format(explanation[raw_prediction[0]]) + eli5.format_as_html(eli5.explain_prediction(model, X_df.iloc[0])), 200
 
 if __name__ == '__main__':
