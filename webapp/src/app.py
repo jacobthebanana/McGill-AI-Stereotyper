@@ -45,7 +45,12 @@ def predict():
             if request.args[key] == "on":
                 X[key] = [1]
             else:
-                X[key] = [request.args[key]]
+                try:
+                    X[key] = [float(request.args[key])]
+                except ValueError:
+                    return {"message": 
+                            "Could not convert value in the field [{}] to float. Make sure that your input is a decimal number.".format(key)}, 400
+
 
     X_df = pd.DataFrame.from_dict(X)
 
