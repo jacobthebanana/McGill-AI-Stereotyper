@@ -3,7 +3,7 @@ Ever thought about making a movie or a TV series? What would be people’s respo
 
 Provide a few details about your title and instantly obtain a break-down of your title's performance! Keep in mind that the prediction here is just a guess- albeit an educated one. Behind this prediction is the automated analysis of over **300,000 titles**.
 
-Interested? This model can be access without writing any code on your side. Simply visit https://jacobthebanana.github.io/McGill-AI-Stereotyper/ and receive your predicitions.  
+Interested? This model can be accessed without writing any code on your side. Simply visit https://jacobthebanana.github.io/McGill-AI-Stereotyper/ and receive your predicitions.  
 
 ## Getting Started (from the daily IMDb datasets)
 ### Building this model in Google Colab:
