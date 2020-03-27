@@ -54,10 +54,15 @@ def predict():
                 "This API requires the following feature(s) but could not find them in your GET request.", 
                 "missing_fields": missing_fields}, 400
        
-    raw_prediction = model.predict(X_df)
-    prediction = np.argmax(raw_prediction)
+    raw_prediction = model.predict(X_df)  # Returns a numpy array of one single integer.
 
-    return eli5.format_as_html(eli5.explain_prediction(model, X_df.iloc[0])), 200
+    explanation = {0: "Your title might get a below-average rating. Don’t panic. Take a closer look at the “top features” shown below the score. Considering tweaking features with the most positive and negtive \"contribution\" for a better performance. 😉",
+                    1: "We expect your title to get an above-average rating. Congratulations! 🤩 See how you can improve your probability of being above-averge by tweaking features with the most positive and negtive \"contribution\"."}
+
+    # It turns out that `eli5.format_as_html` simply returns a string. 
+    # In that case, we shall just concatnate our explanation onto it as a paragraph (hence the `<p> ... </p>` HTML tag.)
+    return \
+        "<p>{}</p>".format(explanation[raw_prediction[0]]) + eli5.format_as_html(eli5.explain_prediction(model, X_df.iloc[0])), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='8000')
