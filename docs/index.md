@@ -84,6 +84,6 @@ Enter the details and hit submit! (Fields marked with an asterisk (\*) are *requ
             <br>
             <input type="submit" value="Submit ✔️">
         </form>
-        <p>Please allow the backend around 30 seconds to warm up after submitting first request for prediction. Subsequent requests will be a breeze.</p> 
+        <p>Please allow the backend 30 seconds to warm up after submitting first request for prediction. Subsequent requests will likely be a breeze.</p> 
     </body>
 </html>
