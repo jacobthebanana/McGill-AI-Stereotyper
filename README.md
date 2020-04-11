@@ -1,5 +1,5 @@
 # [Predict-a-title!](https://jacobthebanana.github.io/McGill-AI-Stereotyper/)
-Ever thought about making a movie or a TV series? What would be people’s response? Would the average rating of your movie beat the averge?
+Ever thought about making a movie or a TV series? What would be people’s response? Would the median rating of your movie beat the median?
 
 Provide a few details about your title and instantly obtain a break-down of your title's performance! Keep in mind that the prediction here is just a guess- albeit an educated one. Behind this prediction is the automated analysis of over **300,000 titles**.
 
