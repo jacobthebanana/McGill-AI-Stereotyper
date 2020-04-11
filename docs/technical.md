@@ -11,7 +11,7 @@ The input comes in multiple datasets. The first step to do is to load and merge 
 
 The next step is to discard some of the unused features such as names and multilingual titles.
 
-The notebook would then condense the actor, writer, and director data by taking the median rating for each of the actor. 
+The notebook would then condense the actor, writer, and director data by taking the average rating for each of the actor. 
 (Thanks to Li from the McGill AI society for the tip.) Entries where such data are unavailable were discarded.
 
 The dataframe is then pickled and stored as [`titles-with-ratings.pkl`](https://github.com/jacobthebanana/McGill-AI-Stereotyper/releases/download/1.0/titles-with-ratings.pkl).
